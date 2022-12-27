@@ -1,0 +1,391 @@
+<html>
+<head>
+<title>CNN Interactive - Views: y</title>
+
+<script language="Javascript" src="/virtual/1998/code/cnn.js"></script>
+<link rel="stylesheet" href="/virtual/1998/code/cnn.css" type="text/css">
+
+</head>
+<body bgcolor="white" link="#3333cc" vlink="#777777">
+
+<table width=600 cellpadding="0" cellspacing="0" border="0">
+<tr valign="top"><td colspan="3">
+<table border="0" width="600" cellspacing="0" cellpadding="0"><tr valign="TOP"><td width="120"></td><td width="8" align=right><a href="/ads/e.market/"><img src="/images/1998/05/homepage/ad.info.gif" width=7 height=62 border=0 alt="ad info"></a></td><td width="468"> </td></tr></table>
+<hr noshade width="600" size="1" align="LEFT">
+</td></tr><tr valign=top><td width="125">
+
+
+<a href="/index.html"><img src="data:image/png;base64,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" alt="CNN.com" width="125" height="43" border="0" hspace="0" vspace="0"></a><br>
+
+<!--TOP-LEVEL NAVIGATION-->  
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/index.html"><font color="#000000">MAIN PAGE</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/WORLD/"><font color="#000000">WORLD</font></a></font></b></td>
+</tr>
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/ASIANOW/"><font color="#000000">ASIANOW</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/US/"><font color="#000000">U.S.</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/LOCAL/"><font color="#000000">LOCAL</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/ALLPOLITICS/index.html"><font color="#000000">POLITICS</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/WEATHER/"><font color="#000000">WEATHER</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/cnnfn/"><font color="#000000">BUSINESS</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/cnnsi/"><font color="#000000">SPORTS</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/TECH/"><font color="#000000">TECHNOLOGY</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/NATURE/"><font color="#000000">NATURE</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/SHOWBIZ/"><font color="#000000">ENTERTAINMENT</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/books/"><font color="#000000">BOOKS</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/TRAVEL/"><font color="#000000">TRAVEL</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/FOOD/"><font color="#000000">FOOD</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/HEALTH/"><font color="#000000">HEALTH</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/STYLE/"><font color="#000000">STYLE</font></a></font></b></td>
+</tr>
+
+<tr> 
+  <td bgcolor="#333399"><img src="/images/1998/05/homepage/icon.arrow.left.gif" width="15" height="15" align="RIGHT"><b><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/SPECIALS/"><font color="#FFFFFF">IN-DEPTH</font></a></font></b></td>
+</tr>
+
+<tr>
+	<td><hr size=1 noshade></td>
+</tr>
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="http://cnn.com/CustomNews/"><font color="#000000">custom news</font></a></font></td>
+</tr>
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/QUICKNEWS/"><font color="#000000">Headline News brief</font></a></font></td>
+</tr>
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/almanac/daily/"><font color="#000000">daily almanac</font></a></font></td>
+</tr>
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/CNN/"><font color="#000000">CNN networks</font></a></font></td>
+</tr>
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/CNNPromos/cnn.html"><font color="#000000">CNN programs</font></a></font></td>
+</tr>
+
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/TRANSCRIPTS/"><font color="#000000">on-air transcripts</font></a></font></td>
+</tr>
+
+<tr> 
+  <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/SEARCH/quiz/quiz.html"><font color="#000000">news quiz</font></a></font><br><br></td>
+</tr>
+
+</table>
+
+<!--/TOP-LEVEL NAVIGATION -->
+
+
+<!-- CNN WEB SITES NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1" color="#FFFFFF">&nbsp; CNN WEB SITES:</font></td>
+</tr>
+
+<tr><td bgcolor="#FFFFFF">
+
+<map name="sites">
+            <area shape="rect" COORDS="0,96,56,115"
+            	href="http://www.cnndanmark.dk/">
+			<area shape="rect" coords="0, 82, 55, 95"
+				href="http://cnn.vg.no/">
+			<area shape="rect" coords="0, 69, 66, 82"
+				href="http://cnn.passagen.se/">
+			<area shape="rect" coords="0, 55, 84, 69"
+				href="/cnnpt/">
+			<area shape="rect" coords="0, 40, 75, 55"
+				href="/cnnes/">
+			<area shape="rect" coords="64, 20, 121, 40"
+				href="/cnnfn/">
+			<area shape="rect" coords="0, 20, 64, 40"
+				href="/ALLPOLITICS/">
+			<area shape="rect" coords="64, 0, 121, 20"
+				href="/cnnsi/">
+			<area shape="rect" coords="0, 0, 64, 20"
+				href="/CustomNews/">
+
+</map>
+
+	<img src="/images/1999/03/cnn_web_site.gif" alt="CNN Websites" width="121" height="104" border="0" usemap="#sites">
+
+
+</td></tr>
+
+</table>
+
+<!-- /CNN WEB SITES NAV -->
+
+<!--PATHFINDER NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+        <td><font face="Helvetica, Arial,sans-serif" color="#FFFFFF" size="1">&nbsp;TIME INC. SITES:</font></td>
+</tr>
+
+<tr> 
+        <FORM name="pathfinder">
+		<td align=center>
+        <SELECT NAME="site" SIZE=1 onChange ="goTW()">
+		<OPTION VALUE=""> Go To ... 
+		<OPTION VALUE="http://www.pathfinder.com/time/">Time.com
+		<OPTION VALUE="http://www.pathfinder.com/people/">People
+		<OPTION VALUE="http://jcgi.pathfinder.com/money/plus/index.oft">Money
+		<OPTION VALUE="http://www.pathfinder.com/fortune/">Fortune
+		<OPTION VALUE="http://cgi.pathfinder.com/ew/">EW
+		</SELECT>
+		</td>
+		</FORM>
+</tr>
+
+</table>
+
+
+<!--/PATHFINDER NAV --> 
+
+<!--MORE SERVICES NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+        <td><font face="Helvetica, Arial,sans-serif" color="#FFFFFF" size="1">&nbsp;MORE SERVICES:</font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/videoselect/"><font color="#000000">video on demand</font></a></font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/video_vault/"><font color="#000000">video archive</font></a></font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/audioselect/"><font color="#000000">audio on demand</font></a></font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/EMAIL/"><font color="#000000">news email services</font></a></font></td>
+</tr>
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="http://email.cnn.com/member/login.page"><font color="#000000">free email accounts</font></a></font></td>
+</tr>
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/desktop/"><font color="#000000">desktop headlines</font></a></font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="http://www.pointcast.com/special/affiliates/cnn.html"><font color="#000000">pointcast</font></a></font><br></td>
+</tr>
+
+<tr>
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/ads/pagenet/"><font color="#000000">pagenet</font></a></font><br><br></td>
+</tr>
+
+</table>
+
+<!--/MORE SERVICES NAV --> 
+
+
+<!--DISCUSSION NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1" color="#FFFFFF">&nbsp;DISCUSSION:</font></td>
+</tr>
+
+<tr> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/boards/"><font color="#000000">message boards</font></a></font></td>
+</tr>
+
+<tr> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/chat/"><font color="#000000">chat</font></a></font></td>
+</tr>
+
+<tr> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/feedback/indepth.html"><font color="#000000">feedback</font></a></font><br><br></td>
+</tr>
+
+</table>
+
+<!--/DISCUSSION NAV -->
+
+
+<!-- SITE GUIDES NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1" color="#FFFFFF">&nbsp;SITE GUIDES:</font></td>
+</tr>
+
+<tr> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/feedback/help/"><font color="#000000">help</font></a></font></td>
+</tr>
+
+<tr> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/INDEX/"><font color="#000000">contents</font></a></font></td>
+</tr>
+
+<tr> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="/SEARCH/"><font color="#000000">search</font></a></font><br><br></td>
+</tr>
+
+</table>
+
+<!-- /SITE GUIDES NAV -->
+
+<!-- FASTER ACCESS NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1" color="#FFFFFF">&nbsp;FASTER ACCESS:</font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="http://europe.cnn.com/"><font color="#000000">europe</font></a></font></td>
+</tr>
+
+<tr> 
+        <td><font face="Helvetica, Arial,sans-serif" size="1">&nbsp;<a href="http://japan.cnn.com"><font color="#000000">japan</font></a></font><br><br></td>
+</tr>
+
+</table>
+
+<!-- /FASTER ACCESS NAV -->
+
+<!-- WEB SERVICES NAV -->
+
+<table border="0" width="125" cellspacing="0" cellpadding="2" bgcolor="#CCCCFF">
+
+<tr bgcolor="#000000"> 
+    <td><font face="Helvetica, Arial,sans-serif" size="1" color="#FFFFFF">&nbsp;WEB SERVICES:</font></td>
+</tr>
+
+</table>
+
+
+
+</td><td width="15">&nbsp;</td>
+<td width="460">
+<FONT FACE="Helvetica, Arial" SIZE="3">
+<!-- banner -->
+<IMG SRC="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Logo_of_the_United_Nations.svg/2560px-Logo_of_the_United_Nations.svg.png" ALT="y banner" ALIGN=ABSMIDDLE WIDTH="460" HEIGHT="60" BORDER="0" HSPACE="0" VSPACE="0">
+<BR CLEAR=ALL>
+<!-- /banner -->
+
+
+
+<!-- search -->
+</FONT>
+<BR>
+<!-- search box -->
+
+<form name=seek method=get action="http://search.cnn.com:80/query.html" name="seek_top" onsubmit="return validate(this);"">
+  <table width="460" cellpadding="5" cellspacing="0" border="0" bgcolor="#333399">
+    <tr valign=top> 
+<td bgcolor="#333333"> 
+<a href="http://search.cnn.com" class=white><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF">SEARCH 
+  CNN.com</font><font face="Helvetica, Arial, sans-serif" size="1" color="#000000"> 
+  </font></b></a> <font color="#000000"><br>
+  </font></td>
+    </tr>
+    <tr valign=top> 
+<td bgcolor="#999999"><font color="#000000"><b><font face="Helvetica, Arial, sans-serif" size="1"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><font color="#FFFFFF"> 
+  </font></font></font></b><font face="Helvetica, Arial, sans-serif" size="1" color="#FFFFFF"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">Enter 
+  keyword(s)</font></font> 
+  <input type="TEXT" name="qt" size="30" value="" maxlength="40">
+  &nbsp; <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><a href="javascript:document.seek.submit()"><font color="#000066">go</font></a>&nbsp; 
+  &nbsp; <a href="http://search.cnn.com:80/help/"><font color="#000066">help</font></a></b></font> 
+  </font>
+  <input type=hidden name=qc value="">
+<input type="hidden" name="sites" value="CNN">
+<input type=hidden name=col value="cnni">
+<input type=hidden name=qm value="0">
+<input type=hidden name=st value="1">
+<input type=hidden name=nh value="10">
+<input type=hidden name=lk value="1">
+<input type=hidden name=rf value="1">
+<input type="hidden" name="key" value="">
+<input type="hidden" name="isp" value="">
+<input type="hidden" name="qp" value="">
+
+  </td>
+    </tr>
+  </table>
+</form>
+
+<!-- /search box -->
+
+
+<center>
+<br clear=all>
+<font face="HELVETICA, ARIAL, sans-serif" size="2">
+<a href="#top"> Back to the top</a>
+</font>
+<font face="HELVETICA, ARIAL, sans-serif" size="1">
+<br>&#169; 2000 Cable News Network. All Rights Reserved.<br>
+<a href="/interactive_legal.html">Terms</a> under which this service is provided to you.<br>
+Read our <A HREF="/privacy.html">privacy guidelines</A>.</font><br>
+</center>
+
+</TD></TR></TABLE>
+</body>
+</html>
