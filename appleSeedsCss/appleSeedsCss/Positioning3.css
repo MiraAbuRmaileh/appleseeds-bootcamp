@@ -1,0 +1,53 @@
+.box1{
+   
+    float: right;
+    position: absolute;
+   border:2px solid yellow;
+   margin:15px;
+   top: 10px; 
+   left: 150px;
+   width: 100px;
+   height: 500px;
+}
+.box2{
+    float:right;
+    position:relative;
+    /* margin:20px; */
+    border:2px solid; 
+    /* top: 10px; 
+   left: 10px; */
+   width: 100px;
+   height: 500px;
+}
+.box3{
+    float:right;
+    /* position:relative; */
+    /* margin: 15px; */
+    border:5px solid  violet; 
+    top: 20px; 
+   left: 25px;
+   right: 140px;
+   width: 100px;
+   height: 500px;
+   position: sticky;
+}
+.box4{
+    position:fixed;
+    /* float: ; */
+    margin: 15px;
+    border:2px solid; 
+    top: 10px; 
+   left: 10px;
+   width: 350px;
+   height: 650px;
+}
+.container2{
+    border: 3px  solid blue;
+    height: 300px;;
+
+}
+.container{
+    border: 3px  solid red;
+    height: 250px;;
+
+}
