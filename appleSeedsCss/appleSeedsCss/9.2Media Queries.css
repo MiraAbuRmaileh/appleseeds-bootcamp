@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: gray;
+    color: white;
+    
+  }
+  
+  .row{
+    display: flex   ;
+  }
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     padding: 16px;
+     text-align: center;
+}
+
+  @media (max-width:768px){
+    .column{
+        width: 50%;
+    }
+    
+    .row{
+        flex-wrap: wrap;
+    }
+
+  }
+
+  @media (max-width:500px){
+    .column{
+        width: 100%;
+    }
+    
+    .row{
+        flex-wrap: wrap;
+    }
+
+  }
+  
