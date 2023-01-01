@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: gray;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+    /* Smart Phone */
+    @media only screen and (max-width:500px){
+      body {
+          background: red;
+      }
+      #smartphone p {
+          display: block;
+          font-size: 5rem;
+          color: aliceblue;
+      }
+    }
+    /* Tablet */
+    @media(min-width:501px) and (max-width:786){
+       body {
+          background: blue;
+  
+       }
+       #tablet p {
+          display: block;
+          font-size: 7rem;
+          color: black;
+       }
+  
+    }
+    /* normal */
+    @media(min-width:789px) and (max-width:1200){
+       body {
+          background: green;
+  
+       }
+       #normal p{
+          display: block;
+          font-size: 10rem;
+          color: blueviolet;
+       }
+  
+    }
+    /* wide screen */
+    @media(min-width:1201px){
+       body {
+          background: black;
+  
+       }
+       #widescreen p{
+          display: block;
+          font-size: 1rem;
+          color: yellow;
+       }
+  
+    }
+    /* land scape */
+    @media(max-height:500px){
+       body {
+          background: orange;
+  
+       }
+       #landscape p{
+          display: block;
+          font-size: 15rem;
+          color: brown;
+       }
+  
+    }
+  </style>
+   <body>
+    <div id="widescreen"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, mollitia.</p></div>
+    <div id="normal"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, mollitia.</p></div>
+    <div id="smartphone"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, mollitia.</p></div>
+    <div id="tablet"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, mollitia.</p></div>
+    <div id="landscape"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, mollitia.</p></div>
+</body>
+</html>
