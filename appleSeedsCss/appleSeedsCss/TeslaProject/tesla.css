@@ -29,27 +29,27 @@
     padding: 0;
     box-sizing: border-box;
     /* font-family: "MyWebFont", Fallback, sans-serif; */
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-behavior: smooth;
+    scroll-snap-type: y mandatory; */
   }
   
   /* OVERALL CSS */
-  .first-page,
-  .third-page {
+  .first-page
+   {
     background-position: center;
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    scroll-snap-align: start
+    
     
   }
   
   .second-page {
     height: 100vh;
     width: 100vw;
-    scroll-snap-align: start
+   
   }
   
   /* FIRST PAGE CSS */
@@ -267,7 +267,7 @@
   }
   
   .side-scroll a:hover {
-    color: white;
+    color: black;
     cursor: pointer;
     font-weight: 600;
   }
@@ -279,7 +279,7 @@
   }
   
   .hover:hover + span {
-    color: white;
+    color: black;
   }
   
   .aside.side-scroll span {
@@ -294,7 +294,7 @@
   }
   
   .chevron-down {
-    fill: white;
+    fill: rgb(114, 29, 29);
     margin: auto;
     width: 2em;
     height: 2em;
@@ -316,24 +316,27 @@
     background-color: white;
     z-index: 1;
   }
-   div .img-container  {
+
     
-    background-image: url("/appleSeedsCss/appleSeedsCss/TeslaProject/TIMG/2022-12-29\ \(26\).jpg");
+   
+div .img-container {
+    background-image: url(/appleSeedsCss/appleSeedsCss/TeslaProject/TIMG/2022-12-29\ \(26\).jpg);
     height: 100%;
-    width: 100%;
-    
-    background-size:50% 50%;
-    background-position: 50% 50%;
-    /* margin-right:15px; */
-    /* background-size:auto; */
+    /* background-color: red; */
+    width: 68%;
+    background-size: 50% 50%;
+    background-position: center;
+    /* margin-right: 15px; */
+    /* background-size: auto; */
     padding: 0px;
-    padding-left:50px;
-    /* box-sizing: border-box;  */
+    padding-left: 50px;
+    /* box-sizing: border-box; */
     background-repeat: no-repeat;
-    float:left;
-     margin: 0px 0px 15px 15px;
-     background-size:80%;
-     background-size:auto;
+    float: left;
+    margin: 0px 0px 15px 15px;
+    background-size: 80%;
+    background-size: contain;
+
 
 
   }
@@ -342,12 +345,14 @@
     display: inline-block;
   }
   
-  .info-container p {
-    color: black;
-    font-weight: lighter;
-    font-family: "lightFont";
-  }
-  
+  .info-container {
+    float: right;
+    height: 100%;
+    width: 466px;
+    height: 31vh;
+    background-color: white;
+    z-index: 1;
+}
   .text-container {
     padding-top: 60px;
     padding-left: 50px;
@@ -448,14 +453,14 @@
   .order-now {
     margin: 10px;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
     width: 120px;
     height: 35px;
     border-radius: 25px;
   }
   
   .order-now:hover {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     transition: all 0.6s;
     cursor: pointer;
@@ -464,7 +469,7 @@
  
   
   .plus-btn .plus h2:hover {
-    background-color: black;
+    /* background-color: black; */
     color: white;
   }
   
@@ -473,7 +478,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: solid 3px black;
+    border: solid 3px;
+    color: whitesmoke;
+    
   }
   
   .plus h2 {
@@ -495,7 +502,7 @@
   }
   
   .bottom-container {
-    background-color: white;
+    /* background-color: white; */
     height: 25vh;
   }
   
@@ -513,7 +520,7 @@
   .third-page-card3 {
     display: inline-block;
     width: 330px;
-    color: white;
+    color: rgb(3, 0, 0);
   }
   
   .third-page-card1 ul li {
@@ -526,7 +533,7 @@
   
   .bottom-container p,
   h2 {
-    color: black;
+    color: whitesmoke;
     display: block;
   }
   
@@ -539,22 +546,21 @@
   .right-bottom-container {
     font-family: "lightFont";
   }
-  
-  .right-bottom-container {
+.right-bottom-container {
     color: black;
-  
     width: 36vw;
-    font-size: 15px;
+    font-size: 18px;
+    font-size: 14px;
     margin-left: 30px;
-    margin-top: 5vh;
+    margin-top: -15vh;
   }
   
   .left-bottom-container {
-    display: inline-block;
-    font-family: "lightFont";
-    margin-left: 200px;
-    margin-bottom: 200px;
-    width: 31vw;
+      display: inline-block;
+      font-family: "lightFont";
+      margin-left: -12px;
+      margin-bottom: 179px;
+      width: 39vw;
   }
   
   .right-bottom-container,
@@ -565,4 +571,13 @@
   .intern-container {
     padding-left: 277px;
   }
-  
+  .third-page{
+    background-image: url(https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=1024);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 50% 50%; */
+    background-size: cover;
+    height: 785px;
+    width: 1536px;
+    margin-top: 417px;
+  }
