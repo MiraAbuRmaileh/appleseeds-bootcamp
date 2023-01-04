@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons transition </title>
+</head>
+<style>
+   body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  /* background: #1e1e24; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+
+.wrapper{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   align-items: left;
+  
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+   position: relative;
+  z-index: 2;
+}
+
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+.square {
+  background: Khaki;
+  border-radius: 5px;
+  height: 150px;
+  margin: 100px;
+  transition:1s;
+  transform: 1s;
+  width: 150px;
+  height: 100px;
+}
+  .square:hover {
+    transform: skewX(-20deg);
+  }
+  .square1 {
+  background: salmon;
+  /* border-radius: 5px; */
+  height: 75px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 75px;}
+  .square1:hover {
+    transform: rotate(90deg) scale(1.25) translateX(25px);
+  }
+  .square2 {
+  background: darkturquoise;
+  /* border-radius: 5px; */
+  height: 100px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 100px;
+  }
+  .square2:hover {
+    transform: scale(2);
+  }
+
+
+
+
+
+
+</style>
+<body>
+  
+    <button class="wrapper"><a href="#">Hover Me!</a></button>
+      <button class="square">skew</button>
+      <button class="square1">rotate</button>
+      <button class="square2">Scale</button>
+   
+</body>
+</html>
