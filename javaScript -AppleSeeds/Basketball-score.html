@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score</title>
+    <script>
+         let johnteam =[100,120,103];
+        let miketeam = [116,94,123];
+        let maryteam =[97,134,105];
+        function avg (scores){
+            let sum =0;
+            for(let i=0;i<scores.length;i++){
+                sum+=scores[i];
+            }
+            return sum /scores.length;
+        }
+        let johnAvg = avg(johnteam);
+        let mikeAvg = avg(miketeam);
+        let maryAvg= avg(maryteam);
+        if(johnAvg > mikeAvg && johnAvg > maryAvg){
+            console.log("The John Team is the winner");
+        }else if(johnaverage<mikeaverage && mikeaverage>maryaverage){
+            console.log("The Mike Team is the winner ");
+
+        }else if(maryAvg>johnAvg && maryAvg>mikeAvg){
+
+        }
+
+        else{
+            console.log("The three Teams are Draw");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
