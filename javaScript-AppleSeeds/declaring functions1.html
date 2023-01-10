@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>declaring functions 1</title>
+    <script>
+        // From function declarations to function expressions
+           
+        // function welcome() {
+        //     let welcome = 'Welcome to Appleseeds Bootcamp!';
+        //     return welcome;
+        // }
+
+        //answer 1 
+        const welcome = function(){
+            let welcome = "welcome to appleseeds bootcamp!";
+            return  welcome ;
+        };
+
+        /////////////////////////////////
+        // function power(a) {
+        //     let myNumber = a;
+        //     let result = Math.pow(myNumber, 2);
+        //     return result;
+        // }
+        // answer 2 
+        const power = function(a){
+            let myNumber = a;
+            return result = Math.pow(myNumber, 2);
+        }
+        const squareRoot = a => Math.sqrt(a);
+        //////////////////////////////////////
+
+        // function add(a, b = 5) {
+        //     let myNumber = a;
+        //     let sum = myNumber + b;
+        //     return sum;
+        // }
+        // answer 3
+        const add = function(a, b=5){
+              let myNumber = a ;
+            let sum =myNumber + b;
+            return sum;
+        }
+      
+        console.log(power(6));
+        console.log(welcome());
+        console.log(add(6));
+        ///////////////////////////////////////////
+        // From function expressions to function declarations
+
+        //  const hello = () => "Hello!";
+         function hello(){
+            let hello = "hello";
+            return  hello ;
+         }
+        // const squareRoot = a => Math.sqrt(a);
+        function squareRoot(a){
+            let c =  Math.sqrt(a);
+            return c ;
+        }
+        function randomNumbers(a,b){
+            let c =  Math.random() * (a - b) + b;
+            return c;
+       
+        }
+        // const randomNumbers = (a, b) => Math.random() * (a - b) +
+        // b;
+        console.log(hello());
+        console.log (squareRoot(5));
+        console.log(randomNumbers(7,8));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
