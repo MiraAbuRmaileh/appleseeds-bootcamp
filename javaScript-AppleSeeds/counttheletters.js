@@ -15,12 +15,3 @@ function count(array){
 }
 const lettercount = count(array);
 console.log(lettercount);
-// let maxLetter = null;
-// let maxCount = 0;
-// for(let letter in lettercount) {
-//     if(lettercount[letter] > maxCount) {
-//         maxLetter = letter;
-//         maxCount = lettercount[letter];
-//     }
-// }
-// console.log(`Letter with the most occurrences: ${maxLetter} with ${maxCount} occurrences`);
