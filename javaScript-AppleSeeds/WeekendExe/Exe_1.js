@@ -249,7 +249,7 @@ function shortestWord(str) {
   console.log(longestWord("can you give me an informations about js examples"));
 
 
-  
+ 
   
 
 
