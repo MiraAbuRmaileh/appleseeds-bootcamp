@@ -30,14 +30,3 @@ document.title = "Master Of The Dom ";
 // document.p.innerText("mira");
 document.p =  "Mira AbuRmaileh";
 document.querySelector('p').innerText = document.p;
-
-
-
-
-
-
-
-
-
-
-
