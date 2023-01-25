@@ -1,0 +1,35 @@
+form{
+    text-align: center;
+    margin-top: 50px;
+     font-size: 20px ; 
+    font-weight: bold;
+    background-color: rgb(144, 106, 132);
+    height: 200px;
+    width: 400px;
+    /* margin-top: 150px; */
+    margin-left: 500px;
+    border-style: solid;
+}
+label{
+    font-size: 20px;
+    
+    
+}
+button{ 
+    margin-top: 30px;
+    width: 40%;
+    height: 20%;
+    font-size: 1rem;
+    background-color: black;
+    color: aliceblue;
+    /* margin-bottom: 5px; */
+    cursor: pointer;
+    
+}
+input{
+    width: 20%;
+    height: 20%;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
