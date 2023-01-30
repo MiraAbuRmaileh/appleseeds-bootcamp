@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecting all </title>
+</head>
+<body>
+<!-- //You have these elements in your HTML file: -->
+    <div id="myFirstDiv"></div>
+<div id="mySecondDiv"></div>
+<div id="myThridDiv"></div>
+<div id="myFourthDiv"></div>
+</body>
+<script>
+// Somebody selected the elements and stored them into
+// individual variables like this:
+const myFirstDiv =
+document.querySelector("#myFirstDiv");
+const mySecondDiv =
+document.querySelector("#mySecondDiv");
+const myThirdDiv =
+document.querySelector("#myThirdDiv");
+const myFourthDiv =
+document.querySelector("#myFourthDiv");
+// Is there a better way you can store the individual elements
+// with giving them different names?
+// Yes, there is a better way to store individual elements with giving them different names. 
+// Instead of using querySelector for each element, you can use querySelectorAll and access each element through an array index. Here's an example:
+const divs = document.querySelectorAll("div");
+// const myFirstDiv = divs[0];
+// const mySecondDiv = divs[1];
+// const myThirdDiv = divs[2];
+// const myFourthDiv = divs[3];
+// This way, you are making only one call to querySelectorAll to select all div elements, and then accessing each individual "div" through the divs array.
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
